@@ -8,10 +8,17 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
-        <Style x:Key="MenuText" TargetType="TextBlock">
+        <Style x:Key="MenuButton" TargetType="Button">
             <Setter Property="FontSize" Value="30"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="Grid.Row" Value="0"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="BasicText">
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="22"/>
         </Style>
     </Page.Resources>
     <Grid>
@@ -19,12 +26,74 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <TextBlock Text="Listings" Style="{StaticResource MenuText}" Grid.Row="0" Grid.Column="0"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Bulk List" Style="{StaticResource MenuButton}" Grid.Column="0"/>
+            <Button Content="Shipping" Style="{StaticResource MenuButton}" Grid.Column="1"/>
+            <Button Content="Messages" Style="{StaticResource MenuButton}" Grid.Column="2"/>
+            <Button Content="Settings" Style="{StaticResource MenuButton}" Grid.Column="3"/>
+        </Grid>
+        <Grid Grid.Row="1"> <!--Bulk Listing Grid-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Slider Minimum="1" Maximum="12" Margin="40,20,0,0" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="0" Text="Images per Listing" Margin="40,40,0,0" Style="{StaticResource BasicText}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button Grid.Column="2" Content="Browse Image Folder" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0,20,40,0"/>
+            <TextBox Grid.Row="1" PlaceholderText="Type shared key words..." Margin="40,20,0,20"/>
+            <ComboBox Grid.Row="1" Grid.Column="2" PlaceholderText="Select Category" HorizontalAlignment="Center" Margin="0,30,40,0">
+                <!-- Get categories from API -->
+            </ComboBox>
+            <Button Grid.Row="1" Grid.Column="2" Content="Edit Category Information" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0,20,40,0"/> <!-- Avaialable Category information depends on category -->
+            <StackPanel Orientation="Vertical" Grid.Row="2" VerticalAlignment="Center" Margin="40,0,0,0">
+                <CheckBox Content="Buy It Now"/>
+                <CheckBox Content="Auction"/>
+            </StackPanel>
+            <TextBox Grid.Row="2" PlaceholderText="Enter starting price" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <CheckBox Grid.Row="2" Content="Require Immediate Pay (Buy It Now)" HorizontalAlignment="Right"/>
+            <CheckBox Grid.Row="2" Grid.Column="2" Content="Allow Offers"/>
+            <TextBox Grid.Row="2" Grid.Column="2" PlaceholderText="Deny offers below a price" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <ComboBox Grid.Row="3" PlaceholderText="Select Shipping Option" Margin="40,0,0,0" VerticalAlignment="Center">
+                <!-- Get Shipping options from API -->
+            </ComboBox>
+            <StackPanel Grid.Row="3" VerticalAlignment="Center" Orientation="Vertical" HorizontalAlignment="Center" Margin="40,0,0,0">
+                <CheckBox Content="Free shipping"/>
+                <CheckBox Content="Buyer pays (auto)"/>
+                <CheckBox Content="Buyer pays (fixed)"/>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Center">
+                <TextBlock Style="{StaticResource BasicText}" Text="Payment Preferences" Grid.Row="3" Grid.Column="2"/>
+                <TextBox PlaceholderText="Paypal email"/>
+                <ComboBox PlaceholderText="Handling time">
+                    <ComboBoxItem Content="Same business day"/>
+                    <ComboBoxItem Content="1 business day"/>
+                    <ComboBoxItem Content="2 business days"/>
+                    <ComboBoxItem Content="3 business days"/>
+                    <ComboBoxItem Content="4 business days"/>
+                    <ComboBoxItem Content="5 business days"/>
+                    <ComboBoxItem Content="10 business days"/>
+                    <ComboBoxItem Content="15 business days"/>
+                    <ComboBoxItem Content="20 business days"/>
+                    <ComboBoxItem Content="30 business days"/>
+                </ComboBox>
+                <TextBox PlaceholderText="Item location (zip code)"/>
+                <CheckBox Content="Allow Domestic Returns"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>
 
