@@ -59,12 +59,14 @@
                 <!-- Get categories from API -->
             </ComboBox>
             <Button Grid.Row="1" Grid.Column="2" Content="Edit Category Information" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0,20,40,0"/> <!-- Avaialable Category information depends on category -->
-            <StackPanel Orientation="Vertical" Grid.Row="2" VerticalAlignment="Center" Margin="40,0,0,0">
-                <CheckBox Content="Buy It Now"/>
-                <CheckBox Content="Auction"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="40,0,0,0" VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical" Grid.Row="2">
+                    <CheckBox Content="Buy It Now"/>
+                    <CheckBox Content="Auction"/>
+                </StackPanel>
+                <TextBox Grid.Row="2" PlaceholderText="Enter starting price" VerticalAlignment="Center"/>
+                <CheckBox Grid.Row="2" Content="Require Immediate Pay (Buy It Now)" Margin="20,0,0,0"/>
             </StackPanel>
-            <TextBox Grid.Row="2" PlaceholderText="Enter starting price" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <CheckBox Grid.Row="2" Content="Require Immediate Pay (Buy It Now)" HorizontalAlignment="Right"/>
             <CheckBox Grid.Row="2" Grid.Column="2" Content="Allow Offers"/>
             <TextBox Grid.Row="2" Grid.Column="2" PlaceholderText="Deny offers below a price" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <ComboBox Grid.Row="3" PlaceholderText="Select Shipping Option" Margin="40,0,0,0" VerticalAlignment="Center">
@@ -75,24 +77,29 @@
                 <CheckBox Content="Buyer pays (auto)"/>
                 <CheckBox Content="Buyer pays (fixed)"/>
             </StackPanel>
-            <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Center">
-                <TextBlock Style="{StaticResource BasicText}" Text="Payment Preferences" Grid.Row="3" Grid.Column="2"/>
-                <TextBox PlaceholderText="Paypal email"/>
-                <ComboBox PlaceholderText="Handling time">
-                    <ComboBoxItem Content="Same business day"/>
-                    <ComboBoxItem Content="1 business day"/>
-                    <ComboBoxItem Content="2 business days"/>
-                    <ComboBoxItem Content="3 business days"/>
-                    <ComboBoxItem Content="4 business days"/>
-                    <ComboBoxItem Content="5 business days"/>
-                    <ComboBoxItem Content="10 business days"/>
-                    <ComboBoxItem Content="15 business days"/>
-                    <ComboBoxItem Content="20 business days"/>
-                    <ComboBoxItem Content="30 business days"/>
-                </ComboBox>
-                <TextBox PlaceholderText="Item location (zip code)"/>
-                <CheckBox Content="Allow Domestic Returns"/>
+            <TextBlock Style="{StaticResource BasicText}" Text="Payment Preferences" Grid.Row="3" Grid.Column="2" VerticalAlignment="Top"/>
+            <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <TextBox PlaceholderText="Paypal email"/>
+                    <ComboBox PlaceholderText="Handling time">
+                        <ComboBoxItem Content="Same business day"/>
+                        <ComboBoxItem Content="1 business day"/>
+                        <ComboBoxItem Content="2 business days"/>
+                        <ComboBoxItem Content="3 business days"/>
+                        <ComboBoxItem Content="4 business days"/>
+                        <ComboBoxItem Content="5 business days"/>
+                        <ComboBoxItem Content="10 business days"/>
+                        <ComboBoxItem Content="15 business days"/>
+                        <ComboBoxItem Content="20 business days"/>
+                        <ComboBoxItem Content="30 business days"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Margin="20,0,0,0">
+                    <TextBox PlaceholderText="Item location (zip code)"/>
+                    <CheckBox Content="Allow Domestic Returns"/>
+                </StackPanel>
             </StackPanel>
+            <Button Content="Create Listings" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center"/>
         </Grid>
     </Grid>
 </Page>
