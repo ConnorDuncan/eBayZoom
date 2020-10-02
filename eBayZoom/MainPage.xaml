@@ -32,11 +32,13 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button Content="Bulk List" Style="{StaticResource MenuButton}" Grid.Column="0"/>
-            <Button Content="Shipping" Style="{StaticResource MenuButton}" Grid.Column="1"/>
-            <Button Content="Messages" Style="{StaticResource MenuButton}" Grid.Column="2"/>
-            <Button Content="Settings" Style="{StaticResource MenuButton}" Grid.Column="3"/>
+            <Button Content="Live Listings" Style="{StaticResource MenuButton}" Grid.Column="1"/>
+            <Button Content="Shipping" Style="{StaticResource MenuButton}" Grid.Column="2"/>
+            <Button Content="Messages" Style="{StaticResource MenuButton}" Grid.Column="3"/>
+            <Button Content="Settings" Style="{StaticResource MenuButton}" Grid.Column="4"/>
         </Grid>
         <Grid Grid.Row="1"> <!--Bulk Listing Grid-->
             <Grid.RowDefinitions>
