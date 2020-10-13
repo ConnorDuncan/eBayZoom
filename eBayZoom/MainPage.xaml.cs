@@ -25,6 +25,13 @@ namespace eBayZoom
         public MainPage()
         {
             this.InitializeComponent();
+            InnerFrame.Navigate(typeof(LoginPage));
+            
+        }
+
+        private void InnerFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }
