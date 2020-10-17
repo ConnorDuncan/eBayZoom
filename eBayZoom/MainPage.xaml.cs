@@ -22,6 +22,7 @@ namespace eBayZoom
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
         public MainPage()
         {
             this.InitializeComponent();
@@ -29,9 +30,15 @@ namespace eBayZoom
             
         }
 
-        private void InnerFrame_Navigated(object sender, NavigationEventArgs e)
+        private async void InnerFrame_Navigated(object sender, NavigationEventArgs e)
         {
-
+            if (await storageFolder.TryGetItemAsync("config.txt") != null)
+            {
+                // Login with settings, navigate to different page
+            }
+            else { 
+                // Do nothing?
+            }
         }
     }
 }

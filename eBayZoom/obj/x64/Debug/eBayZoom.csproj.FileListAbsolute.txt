@@ -47,3 +47,4 @@ C:\Users\parke\source\repos\eBayZoom\eBayZoom\obj\x64\Debug\qualifiers.txt.inter
 C:\Users\parke\source\repos\eBayZoom\eBayZoom\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\parke\source\repos\eBayZoom\eBayZoom\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\parke\source\repos\eBayZoom\eBayZoom\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885562160000000.json
+C:\Users\parke\source\repos\eBayZoom\eBayZoom\obj\x64\Debug\eBayZoom.csprojAssemblyReference.cache
