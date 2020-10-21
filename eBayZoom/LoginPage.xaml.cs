@@ -27,15 +27,11 @@ namespace eBayZoom
     /// </summary>
     public sealed partial class LoginPage : Page
     {
-        private String user = "";
-        private String pass = "";
         private Windows.Storage.StorageFile configSF;
         private Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
         private bool saveLogin = false;
-        private DataProtectionProvider sec = new DataProtectionProvider();
-        private BinaryStringEncoding encoding;
-        private String strLoremIpsum;
-        private String strDescriptor;
+        private BinaryStringEncoding encoding = BinaryStringEncoding.Utf16BE;
+        private String strDescriptor = "LOCAL=user";
 
 
         public LoginPage()
@@ -44,11 +40,8 @@ namespace eBayZoom
             this.ProtectData();
         }
 
-        public async void ProtectData()
+        private async void ProtectData()
         {
-            strDescriptor = "LOCAL=user";
-            encoding = BinaryStringEncoding.Utf16BE;
-
             if(await storageFolder.TryGetItemAsync("config.txt") != null) // if user file exists
             {
                 configSF = await storageFolder.GetFileAsync("config.txt");
@@ -59,16 +52,17 @@ namespace eBayZoom
                     using (var dataReader = new Windows.Storage.Streams.DataReader(inputStream))
                     {
                         uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
-                        string text = dataReader.ReadString(numBytesLoaded);
-                        user = text.Substring(0, text.IndexOf(" "));
-                        pass = text.Substring(text.IndexOf(" " + 1));
+                        IBuffer textBuffer = dataReader.ReadBuffer(numBytesLoaded);
+                        string text = await SampleDataUnprotectStream(textBuffer, encoding);
+                        Username.Text = text.Substring(0, text.IndexOf(" "));
+                        Password.Password = text.Substring(text.IndexOf(" ") + 1);
                         // Call helper method, query ebay api
                     }
                 }
             }
         }
 
-        public async Task<IBuffer> SampleDataProtectionStream(
+        private async Task<IBuffer> SampleDataProtectionStream(
             String descriptor,
             String strMsg,
             BinaryStringEncoding encoding)
@@ -117,7 +111,7 @@ namespace eBayZoom
             return buffProtectedData;
         }
 
-        public async Task<String> SampleDataUnprotectStream(
+        private async Task<String> SampleDataUnprotectStream(
             IBuffer buffProtected,
             BinaryStringEncoding encoding)
         {
@@ -165,12 +159,12 @@ namespace eBayZoom
 
         private void Pass_Change(object sender, TextChangedEventArgs e)
         {
-            pass = Password.Text;
+            
         }
 
         private void User_Change(object sender, TextChangedEventArgs e)
         {
-            user = Username.Text;
+            
         }
 
         private async void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -183,7 +177,9 @@ namespace eBayZoom
                 {
                     using (var dataWriter = new Windows.Storage.Streams.DataWriter(outputStream))
                     {
-                        dataWriter.WriteString(user + " " + pass);
+                        string combo = Username.Text + " " + Password.Password;
+                        IBuffer comboB = await SampleDataProtectionStream(strDescriptor, combo, encoding);
+                        dataWriter.WriteBuffer(comboB);
                         await dataWriter.StoreAsync();
                         await outputStream.FlushAsync();
                     }
