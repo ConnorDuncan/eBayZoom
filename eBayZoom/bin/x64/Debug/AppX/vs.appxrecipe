@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP-V6TC6MNQ</Machine>
-    <WindowsUser>parke</WindowsUser>
+    <Machine>LAPTOP-KI4D7MA3</Machine>
+    <WindowsUser>15049</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>8d08496d-2565-41c9-a161-f2df5f123f8a</PackageIdentityName>
     <PackageIdentityPublisher>CN=parke</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\parke\source\repos\eBayZoom\eBayZoom\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\parke\source\repos\eBayZoom\eBayZoom\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>777C73EBD80C5F3AF8E01649934F34810594B08F72D73BA05EC21ACA9EE059CD</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>8d08496d-2565-41c9-a161-f2df5f123f8a_1.0.0.0_x64__rg4pgjscbjjc4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>8d08496d-2565-41c9-a161-f2df5f123f8a_rg4pgjscbjjc4!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-20T21:23:20.546</Modified>
+      <Modified>2020-10-23T17:02:37.650</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\bin\x64\Debug\eBayZoom.exe">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\eBayZoom.exe">
       <PackagePath>entrypoint\eBayZoom.exe</PackagePath>
-      <Modified>2020-10-20T21:23:20.094</Modified>
+      <Modified>2020-10-23T17:02:36.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,75 +46,75 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-19T01:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\Assets\EBay_logo.png">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\Assets\EBay_logo.png">
       <PackagePath>Assets\EBay_logo.png</PackagePath>
-      <Modified>2020-09-11T02:55:48.438</Modified>
+      <Modified>2020-10-21T16:48:34.362</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-09-10T23:52:24.047</Modified>
+      <Modified>2020-10-21T16:48:34.362</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-10T23:52:24.058</Modified>
+      <Modified>2020-10-21T16:48:34.362</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-10T23:52:24.061</Modified>
+      <Modified>2020-10-21T16:48:34.363</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-10T23:52:24.063</Modified>
+      <Modified>2020-10-21T16:48:34.363</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-10T23:52:24.066</Modified>
+      <Modified>2020-10-21T16:48:34.363</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-10T23:52:24.069</Modified>
+      <Modified>2020-10-21T16:48:34.364</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-09-10T23:52:24.071</Modified>
+      <Modified>2020-10-21T16:48:34.364</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-09-11T00:00:47.129</Modified>
+      <Modified>2020-10-21T16:48:34.367</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\bin\x64\Debug\eBayZoom.xr.xml">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\eBayZoom.xr.xml">
       <PackagePath>eBayZoom.xr.xml</PackagePath>
-      <Modified>2020-10-20T19:33:18.980</Modified>
+      <Modified>2020-10-21T16:48:34.471</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-20T21:23:19.956</Modified>
+      <Modified>2020-10-23T17:02:36.132</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\bin\x64\Debug\LoginPage.xbf">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\LoginPage.xbf">
       <PackagePath>LoginPage.xbf</PackagePath>
-      <Modified>2020-10-20T21:23:19.956</Modified>
+      <Modified>2020-10-23T17:02:36.132</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-20T21:23:19.956</Modified>
+      <Modified>2020-10-23T17:02:36.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-19T00:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-10-20T21:07:31.959</Modified>
+      <Modified>2020-10-23T17:02:37.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\parke\source\repos\eBayZoom\eBayZoom\bin\x64\Debug\Core\eBayZoom.exe">
+    <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\Core\eBayZoom.exe">
       <PackagePath>eBayZoom.exe</PackagePath>
-      <Modified>2020-10-20T21:23:20.542</Modified>
+      <Modified>2020-10-23T17:02:37.640</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

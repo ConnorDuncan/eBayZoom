@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\parke\\source\\repos\\eBayZoom\\eBayZoom\\eBayZoom.csproj": {}
+    "C:\\Users\\15049\\Documents\\GitHub\\eBayZoom\\eBayZoom\\eBayZoom.csproj": {}
   },
   "projects": {
-    "C:\\Users\\parke\\source\\repos\\eBayZoom\\eBayZoom\\eBayZoom.csproj": {
+    "C:\\Users\\15049\\Documents\\GitHub\\eBayZoom\\eBayZoom\\eBayZoom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\parke\\source\\repos\\eBayZoom\\eBayZoom\\eBayZoom.csproj",
+        "projectUniqueName": "C:\\Users\\15049\\Documents\\GitHub\\eBayZoom\\eBayZoom\\eBayZoom.csproj",
         "projectName": "eBayZoom",
-        "projectPath": "C:\\Users\\parke\\source\\repos\\eBayZoom\\eBayZoom\\eBayZoom.csproj",
-        "packagesPath": "C:\\Users\\parke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\parke\\source\\repos\\eBayZoom\\eBayZoom\\obj\\",
+        "projectPath": "C:\\Users\\15049\\Documents\\GitHub\\eBayZoom\\eBayZoom\\eBayZoom.csproj",
+        "packagesPath": "C:\\Users\\15049\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\15049\\Documents\\GitHub\\eBayZoom\\eBayZoom\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\parke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\15049\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.10, )"
+            },
+            "eBay.OAuth.Client": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [

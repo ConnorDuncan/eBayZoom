@@ -158,6 +158,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="eBay.OAuth.Client">
+      <Version>1.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>
     </PackageReference>
