@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>777C73EBD80C5F3AF8E01649934F34810594B08F72D73BA05EC21ACA9EE059CD</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>3FAA169589D05BE242A096F9EEFEE074DA9291F819188307E7F42CB6618169CA</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>8d08496d-2565-41c9-a161-f2df5f123f8a_1.0.0.0_x64__rg4pgjscbjjc4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>8d08496d-2565-41c9-a161-f2df5f123f8a_rg4pgjscbjjc4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>8d08496d-2565-41c9-a161-f2df5f123f8a</RegisteredPackageID>
@@ -30,17 +30,37 @@
     <AppXManifest Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-23T17:02:37.650</Modified>
+      <Modified>2020-11-20T21:33:37.547</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\eBayZoom.exe">
       <PackagePath>entrypoint\eBayZoom.exe</PackagePath>
-      <Modified>2020-10-23T17:02:36.313</Modified>
+      <Modified>2020-11-20T21:33:37.039</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\15049\.nuget\packages\ebay.oauth.client\1.0.1\lib\netstandard2.0\ebay-oauth-csharp-client.dll">
+      <PackagePath>ebay-oauth-csharp-client.dll</PackagePath>
+      <Modified>2019-08-27T02:37:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\15049\.nuget\packages\log4net\2.0.8\lib\netstandard1.3\log4net.dll">
+      <PackagePath>log4net.dll</PackagePath>
+      <Modified>2017-03-09T03:26:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\15049\.nuget\packages\newtonsoft.json\12.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2018-11-28T02:07:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\15049\.nuget\packages\restsharp\106.5.4\lib\netstandard2.0\RestSharp.dll">
+      <PackagePath>RestSharp.dll</PackagePath>
+      <Modified>2018-10-16T00:58:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-02-28T02:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\15049\.nuget\packages\yamldotnet\5.3.0\lib\netstandard1.3\YamlDotNet.dll">
+      <PackagePath>YamlDotNet.dll</PackagePath>
+      <Modified>2018-12-06T00:07:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -94,15 +114,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-23T17:02:36.132</Modified>
+      <Modified>2020-11-20T21:33:36.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\LoginPage.xbf">
       <PackagePath>LoginPage.xbf</PackagePath>
-      <Modified>2020-10-23T17:02:36.132</Modified>
+      <Modified>2020-11-20T21:33:36.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-23T17:02:36.132</Modified>
+      <Modified>2020-11-20T21:33:36.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -110,11 +130,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-10-23T17:02:37.051</Modified>
+      <Modified>2020-11-14T18:58:29.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\Core\eBayZoom.exe">
       <PackagePath>eBayZoom.exe</PackagePath>
-      <Modified>2020-10-23T17:02:37.640</Modified>
+      <Modified>2020-11-20T21:33:37.543</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

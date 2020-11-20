@@ -98,3 +98,9 @@ C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\obj\x64\Debug\qualifiers.txt.i
 C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885562160000000.json
+C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\ebay-oauth-csharp-client.dll
+C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\log4net.dll
+C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\Newtonsoft.Json.pdb
+C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\RestSharp.dll
+C:\Users\15049\Documents\GitHub\eBayZoom\eBayZoom\bin\x64\Debug\YamlDotNet.dll

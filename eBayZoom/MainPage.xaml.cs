@@ -37,7 +37,7 @@ namespace eBayZoom
                 // Login with settings, navigate to different page
             }
             else { 
-                // Do nothing?
+                // Do nothing? 
             }
         }
     }

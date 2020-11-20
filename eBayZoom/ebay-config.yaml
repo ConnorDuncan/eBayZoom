@@ -1,0 +1,16 @@
+﻿name: ebay-config
+
+# OAuth Access Tokens - https://developer.ebay.com/api-docs/static/oauth-tokens.html
+
+# UPDATE the values in this file, before running the tests
+api.sandbox.ebay.com:
+    appid: <ConnorDu-BuyItNow-SBX-ec8e89b76-5d84fee7>
+    certid: <SBX-c8e89b76859a-6861-45f9-bd54-d952>
+    devid: <6f44a95c-a57a-4119-adb8-909add58125d>
+    redirecturi: <https://auth.sandbox.ebay.com/oauth2/authorize?client_id=ConnorDu-BuyItNow-SBX-ec8e89b76-5d84fee7&response_type=code&redirect_uri=Connor_Duncan-ConnorDu-BuyItN-nbqtjal&scope=https://api.ebay.com/oauth/api_scope>
+
+api.ebay.com:
+    appid: <ConnorDu-BuyItNow-PRD-2c8e89b76-723259aa>
+    certid: <PRD-c8e89b76f28c-2641-406f-bd53-28bd>
+    devid: <6f44a95c-a57a-4119-adb8-909add58125d>
+    redirecturi: <https://auth.ebay.com/oauth2/authorize?client_id=ConnorDu-BuyItNow-PRD-2c8e89b76-723259aa&response_type=code&redirect_uri=Connor_Duncan-ConnorDu-BuyItN-txqsfe&scope=https://api.ebay.com/oauth/api_scope>

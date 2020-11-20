@@ -17,6 +17,8 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Security.Cryptography;
 using Windows.Storage.Streams;
 using System.Threading.Tasks;
+using eBay.ApiClient.Auth.OAuth2;
+using eBay.ApiClient.Auth.OAuth2.Model;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -32,14 +34,45 @@ namespace eBayZoom
         private bool saveLogin = false;
         private BinaryStringEncoding encoding = BinaryStringEncoding.Utf16BE;
         private String strDescriptor = "LOCAL=user";
+        private OAuth2Api AuthAPI = new OAuth2Api();
+        private IList<String> scopes = new List<String>();
+        private OAuthEnvironment environment = OAuthEnvironment.SANDBOX;
+        private OAuthResponse appToken = null;
+        private String AuthURL = null;
 
 
         public LoginPage()
         {
             this.InitializeComponent();
             this.ProtectData();
+            SavePasswordCheckBox.IsChecked = saveLogin;
+            try
+            {
+                CredentialUtil.Load("..\\ebay-config.yaml");
+            }
+            catch
+            {
+                Console.WriteLine("Error, program settings unable to be read.");
+            }
+            FillScopes();
+            //appToken = AuthAPI.GetApplicationToken(environment, scopes);
+            //AuthURL = AuthAPI.GenerateUserAuthorizationUrl(environment, scopes, appToken.AccessToken.Token);
         }
 
+        private void FillScopes()
+        {
+            scopes.Add("https://api.ebay.com/oauth/api_scope");
+            scopes.Add("https://api.ebay.com/oauth/api_scope/buy.order.readonly");
+            scopes.Add("https://api.ebay.com/oauth/api_scope/sell.inventory");
+            scopes.Add("https://api.ebay.com/oauth/api_scope/sell.account");
+            scopes.Add("https://api.ebay.com/oauth/api_scope/sell.fulfillment");
+            scopes.Add("https://api.ebay.com/oauth/api_scope/commerce.identity.readonly");
+            scopes.Add("https://api.ebay.com/oauth/api_scope/commerce.identity.email.readonly");
+            scopes.Add("https://api.ebay.com/oauth/api_scope/commerce.identity.address.readonly");
+            scopes.Add("https://api.ebay.com/oauth/api_scope/commerce.identity.name.readonly");
+            scopes.Add("https://api.ebay.com/oauth/api_scope/sell.finances");
+            scopes.Add("https://api.ebay.com/oauth/api_scope/sell.item");
+        }
         private async void ProtectData()
         {
             if(await storageFolder.TryGetItemAsync("config.txt") != null) // if user file exists
@@ -56,7 +89,6 @@ namespace eBayZoom
                         string text = await SampleDataUnprotectStream(textBuffer, encoding);
                         Username.Text = text.Substring(0, text.IndexOf(" "));
                         Password.Password = text.Substring(text.IndexOf(" ") + 1);
-                        // Call helper method, query ebay api
                     }
                 }
             }
@@ -185,6 +217,10 @@ namespace eBayZoom
                     }
                 }
                 stream.Dispose();
+            }
+            else
+            {
+                await storageFolder.DeleteAsync();
             }
         }
     }
