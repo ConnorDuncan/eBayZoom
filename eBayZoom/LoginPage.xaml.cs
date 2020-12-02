@@ -19,6 +19,7 @@ using Windows.Storage.Streams;
 using System.Threading.Tasks;
 using eBay.ApiClient.Auth.OAuth2;
 using eBay.ApiClient.Auth.OAuth2.Model;
+using System.Security.AccessControl;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -45,14 +46,17 @@ namespace eBayZoom
         {
             this.InitializeComponent();
             this.ProtectData();
-            SavePasswordCheckBox.IsChecked = saveLogin;
             try
             {
-                CredentialUtil.Load("..\\ebay-config.yaml");
+                string configName = "ebay-config.yaml";
+                System.Diagnostics.Debug.WriteLine("Adding access control entry for " + configName);
+
+                CredentialUtil.Load("C:\\Users\\15049\\Documents\\GitHub\\eBayZoom\\eBayZoom\\ebay-config.yaml");
+                System.Diagnostics.Debug.WriteLine("Config successfully loaded.");
             }
-            catch
+            catch (Exception e)
             {
-                Console.WriteLine("Error, program settings unable to be read.");
+                System.Diagnostics.Debug.WriteLine("Error, program settings unable to be read. Thrown: " + e.Message);
             }
             FillScopes();
             //appToken = AuthAPI.GetApplicationToken(environment, scopes);
@@ -87,11 +91,33 @@ namespace eBayZoom
                         uint numBytesLoaded = await dataReader.LoadAsync((uint)size);
                         IBuffer textBuffer = dataReader.ReadBuffer(numBytesLoaded);
                         string text = await SampleDataUnprotectStream(textBuffer, encoding);
-                        Username.Text = text.Substring(0, text.IndexOf(" "));
-                        Password.Password = text.Substring(text.IndexOf(" ") + 1);
+                        if(text.Length != 0 && text.IndexOf(" ") > 0 )
+                        {
+                            Username.Text = text.Substring(0, text.IndexOf(" "));
+                            Password.Password = text.Substring(text.IndexOf(" ") + 1);
+                            saveLogin = true;
+                            SavePasswordCheckBox.IsChecked = true;
+                        }
+                        
                     }
                 }
             }
+        }
+
+        public static void AddFileSecurity(string fileName, string account,
+            FileSystemRights rights, AccessControlType controlType)
+        {
+
+            // Get a FileSecurity object that represents the
+            // current security settings.
+            FileSecurity fSecurity = File.GetAccessControl(fileName);
+
+            // Add the FileSystemAccessRule to the security settings.
+            fSecurity.AddAccessRule(new FileSystemAccessRule(account,
+                rights, controlType));
+
+            // Set the new access settings.
+            File.SetAccessControl(fileName, fSecurity);
         }
 
         private async Task<IBuffer> SampleDataProtectionStream(
@@ -220,7 +246,7 @@ namespace eBayZoom
             }
             else
             {
-                await storageFolder.DeleteAsync();
+                configSF = await storageFolder.CreateFileAsync("config.txt", Windows.Storage.CreationCollisionOption.ReplaceExisting);
             }
         }
     }

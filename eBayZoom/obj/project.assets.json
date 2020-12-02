@@ -625,6 +625,26 @@
           "ref/netstandard1.3/System.IO.FileSystem.dll": {}
         }
       },
+      "System.IO.FileSystem.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.IO.FileSystem.Primitives/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -675,6 +695,18 @@
         },
         "runtime": {
           "lib/netcore50/System.Linq.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
         }
       },
       "System.Net.NameResolution/4.0.0": {
@@ -876,6 +908,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Runtime.Extensions/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -980,6 +1021,36 @@
           "runtimes/aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll": {
             "assetType": "runtime",
             "rid": "aot"
+          }
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/uap10.0.16299/_._": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/uap10.0.16299/_._": {
+            "assetType": "runtime",
+            "rid": "win"
           }
         }
       },
@@ -2221,6 +2292,20 @@
           "ref/netstandard1.3/System.IO.FileSystem.dll": {}
         }
       },
+      "System.IO.FileSystem.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        }
+      },
       "System.IO.FileSystem.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2256,6 +2341,18 @@
         },
         "runtime": {
           "lib/netcore50/System.Linq.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
         }
       },
       "System.Net.NameResolution/4.0.0": {
@@ -2468,6 +2565,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Runtime.Extensions/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -2578,6 +2684,24 @@
         },
         "runtime": {
           "runtimes/win8/lib/netstandard1.3/System.Runtime.WindowsRuntime.dll": {}
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -3880,6 +4004,20 @@
           "ref/netstandard1.3/System.IO.FileSystem.dll": {}
         }
       },
+      "System.IO.FileSystem.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        }
+      },
       "System.IO.FileSystem.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3915,6 +4053,18 @@
         },
         "runtime": {
           "lib/netcore50/System.Linq.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
         }
       },
       "System.Net.NameResolution/4.0.0": {
@@ -4127,6 +4277,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Runtime.Extensions/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -4237,6 +4396,24 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Runtime.WindowsRuntime.dll": {}
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -5539,6 +5716,20 @@
           "ref/netstandard1.3/System.IO.FileSystem.dll": {}
         }
       },
+      "System.IO.FileSystem.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        }
+      },
       "System.IO.FileSystem.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -5574,6 +5765,18 @@
         },
         "runtime": {
           "lib/netcore50/System.Linq.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
         }
       },
       "System.Net.NameResolution/4.0.0": {
@@ -5786,6 +5989,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Runtime.Extensions/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -5896,6 +6108,24 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Runtime.WindowsRuntime.dll": {}
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -7152,6 +7382,20 @@
           "ref/netstandard1.3/System.IO.FileSystem.dll": {}
         }
       },
+      "System.IO.FileSystem.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        }
+      },
       "System.IO.FileSystem.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -7187,6 +7431,18 @@
         },
         "runtime": {
           "lib/netcore50/System.Linq.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
         }
       },
       "System.Net.NameResolution/4.0.0": {
@@ -7399,6 +7655,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Runtime.Extensions/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -7509,6 +7774,24 @@
         },
         "runtime": {
           "runtimes/win8/lib/netstandard1.3/System.Runtime.WindowsRuntime.dll": {}
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -8811,6 +9094,20 @@
           "ref/netstandard1.3/System.IO.FileSystem.dll": {}
         }
       },
+      "System.IO.FileSystem.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        }
+      },
       "System.IO.FileSystem.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -8846,6 +9143,18 @@
         },
         "runtime": {
           "lib/netcore50/System.Linq.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
         }
       },
       "System.Net.NameResolution/4.0.0": {
@@ -9058,6 +9367,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Runtime.Extensions/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -9168,6 +9486,24 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Runtime.WindowsRuntime.dll": {}
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -10424,6 +10760,20 @@
           "ref/netstandard1.3/System.IO.FileSystem.dll": {}
         }
       },
+      "System.IO.FileSystem.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        }
+      },
       "System.IO.FileSystem.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -10459,6 +10809,18 @@
         },
         "runtime": {
           "lib/netcore50/System.Linq.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
         }
       },
       "System.Net.NameResolution/4.0.0": {
@@ -10671,6 +11033,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Runtime.Extensions/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -10781,6 +11152,24 @@
         },
         "runtime": {
           "runtimes/win8/lib/netstandard1.3/System.Runtime.WindowsRuntime.dll": {}
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -12083,6 +12472,20 @@
           "ref/netstandard1.3/System.IO.FileSystem.dll": {}
         }
       },
+      "System.IO.FileSystem.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {}
+        }
+      },
       "System.IO.FileSystem.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -12118,6 +12521,18 @@
         },
         "runtime": {
           "lib/netcore50/System.Linq.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
         }
       },
       "System.Net.NameResolution/4.0.0": {
@@ -12330,6 +12745,15 @@
           "lib/win8/_._": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Runtime.Extensions/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -12440,6 +12864,24 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Runtime.WindowsRuntime.dll": {}
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/uap10.0.16299/_._": {}
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -18830,6 +19272,50 @@
         "system.io.filesystem.nuspec"
       ]
     },
+    "System.IO.FileSystem.AccessControl/5.0.0": {
+      "sha512": "SxHB3nuNrpptVk+vZ/F+7OHEpoHUIKKMl02bUmYHQr1r+glbZQxs7pRtsf4ENO29TVm2TH3AEeep2fJcy92oYw==",
+      "type": "package",
+      "path": "system.io.filesystem.accesscontrol/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.IO.FileSystem.AccessControl.dll",
+        "lib/net461/System.IO.FileSystem.AccessControl.dll",
+        "lib/net461/System.IO.FileSystem.AccessControl.xml",
+        "lib/netstandard1.3/System.IO.FileSystem.AccessControl.dll",
+        "lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll",
+        "lib/netstandard2.0/System.IO.FileSystem.AccessControl.xml",
+        "ref/net46/System.IO.FileSystem.AccessControl.dll",
+        "ref/net461/System.IO.FileSystem.AccessControl.dll",
+        "ref/net461/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/System.IO.FileSystem.AccessControl.dll",
+        "ref/netstandard1.3/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/de/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/es/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/it/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.IO.FileSystem.AccessControl.xml",
+        "ref/netstandard2.0/System.IO.FileSystem.AccessControl.dll",
+        "ref/netstandard2.0/System.IO.FileSystem.AccessControl.xml",
+        "runtimes/win/lib/net46/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/net461/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/net461/System.IO.FileSystem.AccessControl.xml",
+        "runtimes/win/lib/netstandard1.3/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll",
+        "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.xml",
+        "system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
+        "system.io.filesystem.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.IO.FileSystem.Primitives/4.0.1": {
       "sha512": "3OHEB0k4OR6k6gEiaBKYKok7/JEOZqyZ7P4xybb+Y18/v/EdyrIi7VA26yHE9JzT8SHDEK2/h9Is89USv2qdcw==",
       "type": "package",
@@ -19021,6 +19507,29 @@
         "ref/xamarinwatchos10/_._",
         "system.linq.4.1.0.nupkg.sha512",
         "system.linq.nuspec"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Net.NameResolution/4.0.0": {
@@ -19782,6 +20291,35 @@
         "system.runtime.nuspec"
       ]
     },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Runtime.Extensions/4.1.0": {
       "sha512": "CUOHjTT/vgP0qGW22U4/hDlOqXmcPq5YicBaXdUR2UiUoLwBT+olO6we4DVbq57jeX5uXH2uerVZhf0qGj+sVQ==",
       "type": "package",
@@ -20215,6 +20753,108 @@
         "runtimes/win8/lib/netstandard1.3/System.Runtime.WindowsRuntime.dll",
         "system.runtime.windowsruntime.4.3.0.nupkg.sha512",
         "system.runtime.windowsruntime.nuspec"
+      ]
+    },
+    "System.Security.AccessControl/5.0.0": {
+      "sha512": "dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
+      "type": "package",
+      "path": "system.security.accesscontrol/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.xml",
+        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/System.Security.AccessControl.dll",
+        "ref/netstandard1.3/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
+        "ref/netstandard2.0/System.Security.AccessControl.dll",
+        "ref/netstandard2.0/System.Security.AccessControl.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.accesscontrol.5.0.0.nupkg.sha512",
+        "system.security.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Principal.Windows/5.0.0": {
+      "sha512": "t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
+      "type": "package",
+      "path": "system.security.principal.windows/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.xml",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.5.0.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Text.Encoding/4.3.0": {
@@ -20912,6 +21552,7 @@
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.10",
+      "System.IO.FileSystem.AccessControl >= 5.0.0",
       "eBay.OAuth.Client >= 1.0.1"
     ]
   },
@@ -20956,6 +21597,10 @@
             "target": "Package",
             "version": "[6.2.10, )"
           },
+          "System.IO.FileSystem.AccessControl": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "eBay.OAuth.Client": {
             "target": "Package",
             "version": "[1.0.1, )"
@@ -20998,6 +21643,70 @@
       "level": "Warning",
       "warningLevel": 1,
       "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Console 4.0.0 -> runtime.win.System.Console 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm",
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Debug from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Diagnostics.Debug (>= 4.0.11)",
+      "libraryId": "System.Diagnostics.Debug",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm",
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Runtime.Extensions from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Runtime.Extensions (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.Extensions (>= 4.1.0)",
+      "libraryId": "System.Runtime.Extensions",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm",
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Runtime.InteropServices from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Runtime.InteropServices (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.InteropServices (>= 4.1.0)",
+      "libraryId": "System.Runtime.InteropServices",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm",
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
       "libraryId": "System.Threading",
       "targetGraphs": [
         "UAP,Version=v10.0.17763/win10-arm",
@@ -21110,70 +21819,6 @@
       "level": "Warning",
       "warningLevel": 1,
       "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.Sockets 4.1.0 -> runtime.win.System.Net.Sockets 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm",
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Diagnostics.Debug from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Diagnostics.Debug (>= 4.0.11)",
-      "libraryId": "System.Diagnostics.Debug",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm",
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Runtime.Extensions from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Runtime.Extensions (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.Extensions (>= 4.1.0)",
-      "libraryId": "System.Runtime.Extensions",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm",
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Runtime.InteropServices from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Runtime.InteropServices (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.InteropServices (>= 4.1.0)",
-      "libraryId": "System.Runtime.InteropServices",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm",
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.IO.FileSystem 4.0.1 -> runtime.win.System.IO.FileSystem 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
       "libraryId": "System.Threading",
       "targetGraphs": [
         "UAP,Version=v10.0.17763/win10-arm",
@@ -21411,6 +22056,19 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Console 4.0.0 -> System.IO 4.1.0 -> runtime.aot.System.IO 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
       "message": "Detected package downgrade: System.Diagnostics.Debug from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Diagnostics.TraceSource 4.0.0 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Diagnostics.Debug (>= 4.0.11)",
       "libraryId": "System.Diagnostics.Debug",
       "targetGraphs": [
@@ -21450,6 +22108,19 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.IO.FileSystem 4.0.1 -> System.IO 4.1.0 -> runtime.aot.System.IO 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
       "message": "Detected package downgrade: System.Diagnostics.Debug from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Linq 4.1.0 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Diagnostics.Debug (>= 4.0.11)",
       "libraryId": "System.Diagnostics.Debug",
       "targetGraphs": [
@@ -21477,6 +22148,175 @@
       "level": "Warning",
       "warningLevel": 1,
       "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Linq 4.1.0 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Debug from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Diagnostics.Debug (>= 4.0.11)",
+      "libraryId": "System.Diagnostics.Debug",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Runtime.Extensions from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Runtime.Extensions (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.Extensions (>= 4.1.0)",
+      "libraryId": "System.Runtime.Extensions",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Reflection.Extensions from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection.Extensions (>= 4.0.1)",
+      "libraryId": "System.Reflection.Extensions",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Runtime.Extensions from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Runtime.Extensions (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.Extensions (>= 4.1.0)",
+      "libraryId": "System.Runtime.Extensions",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Runtime.InteropServices from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Runtime.InteropServices (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.InteropServices (>= 4.1.0)",
+      "libraryId": "System.Runtime.InteropServices",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.Requests 4.0.11 -> System.IO 4.1.0 -> runtime.aot.System.IO 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.Sockets 4.1.0 -> System.IO 4.1.0 -> runtime.aot.System.IO 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection 4.3.0 -> System.IO 4.3.0 -> runtime.aot.System.IO 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection 4.3.0 -> System.Reflection.Primitives 4.3.0 -> runtime.aot.System.Reflection.Primitives 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection.TypeExtensions 4.1.0 -> System.Reflection.Primitives 4.0.1 -> runtime.aot.System.Reflection.Primitives 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.InteropServices 4.1.0 -> System.Reflection.Primitives 4.0.1 -> runtime.aot.System.Reflection.Primitives 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
       "libraryId": "System.Threading",
       "targetGraphs": [
         "UAP,Version=v10.0.17763/win10-arm-aot",
@@ -21555,19 +22395,6 @@
       "level": "Warning",
       "warningLevel": 1,
       "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Text.RegularExpressions 4.1.0 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Console 4.0.0 -> System.IO 4.1.0 -> runtime.aot.System.IO 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
       "libraryId": "System.Threading",
       "targetGraphs": [
         "UAP,Version=v10.0.17763/win10-arm-aot",
@@ -21684,201 +22511,6 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: System.Diagnostics.Debug from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Diagnostics.Debug (>= 4.0.11)",
-      "libraryId": "System.Diagnostics.Debug",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Runtime.Extensions from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Runtime.Extensions (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.Extensions (>= 4.1.0)",
-      "libraryId": "System.Runtime.Extensions",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Reflection.Extensions from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection.Extensions (>= 4.0.1)",
-      "libraryId": "System.Reflection.Extensions",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Runtime.Extensions from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Runtime.Extensions (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.Extensions (>= 4.1.0)",
-      "libraryId": "System.Runtime.Extensions",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Runtime.InteropServices from 4.3.0 to 4.1.0. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Runtime.InteropServices (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.InteropServices (>= 4.1.0)",
-      "libraryId": "System.Runtime.InteropServices",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.NameResolution 4.0.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection 4.3.0 -> System.IO 4.3.0 -> runtime.aot.System.IO 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection 4.3.0 -> System.Reflection.Primitives 4.3.0 -> runtime.aot.System.Reflection.Primitives 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection.TypeExtensions 4.1.0 -> System.Reflection.Primitives 4.0.1 -> runtime.aot.System.Reflection.Primitives 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Runtime.InteropServices 4.1.0 -> System.Reflection.Primitives 4.0.1 -> runtime.aot.System.Reflection.Primitives 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.Requests 4.0.11 -> System.IO 4.1.0 -> runtime.aot.System.IO 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.Sockets 4.1.0 -> System.IO 4.1.0 -> runtime.aot.System.IO 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.IO.FileSystem 4.0.1 -> System.IO 4.1.0 -> runtime.aot.System.IO 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection.Extensions 4.0.1 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.Primitives 4.3.0 -> runtime.aot.System.Reflection.Primitives 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
-      "libraryId": "System.Threading",
-      "targetGraphs": [
-        "UAP,Version=v10.0.17763/win10-arm-aot",
-        "UAP,Version=v10.0.17763/win10-arm64-aot",
-        "UAP,Version=v10.0.17763/win10-x64-aot",
-        "UAP,Version=v10.0.17763/win10-x86-aot"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
       "message": "Detected package downgrade: System.Diagnostics.Debug from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.Requests 4.0.11 -> System.Net.WebHeaderCollection 4.0.1 -> System.Collections 4.0.11 -> runtime.aot.System.Collections 4.3.0 -> System.Diagnostics.Debug (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Diagnostics.Debug (>= 4.0.11)",
       "libraryId": "System.Diagnostics.Debug",
       "targetGraphs": [
@@ -21920,6 +22552,19 @@
       "warningLevel": 1,
       "message": "Detected package downgrade: System.Reflection.Extensions from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Net.Sockets 4.1.0 -> runtime.win.System.Net.Sockets 4.3.0 -> System.Diagnostics.Tracing 4.3.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection.Extensions (>= 4.0.1)",
       "libraryId": "System.Reflection.Extensions",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763/win10-arm-aot",
+        "UAP,Version=v10.0.17763/win10-arm64-aot",
+        "UAP,Version=v10.0.17763/win10-x64-aot",
+        "UAP,Version=v10.0.17763/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Threading from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Reflection.Extensions 4.0.1 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.Primitives 4.3.0 -> runtime.aot.System.Reflection.Primitives 4.3.0 -> System.Threading (>= 4.3.0) \r\n eBayZoom -> eBay.OAuth.Client 1.0.1 -> log4net 2.0.8 -> System.Threading (>= 4.0.11)",
+      "libraryId": "System.Threading",
       "targetGraphs": [
         "UAP,Version=v10.0.17763/win10-arm-aot",
         "UAP,Version=v10.0.17763/win10-arm64-aot",

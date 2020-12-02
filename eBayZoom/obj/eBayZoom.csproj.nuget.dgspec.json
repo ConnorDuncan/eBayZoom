@@ -41,6 +41,10 @@
               "target": "Package",
               "version": "[6.2.10, )"
             },
+            "System.IO.FileSystem.AccessControl": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "eBay.OAuth.Client": {
               "target": "Package",
               "version": "[1.0.1, )"
